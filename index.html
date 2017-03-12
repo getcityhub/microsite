@@ -33,28 +33,27 @@
     <div id="left">
       <div class="container left">
         <h1>CityHub</h1>
-        <h2>Enact change in your neighborhood</h2>
-        <p>Description</p>
+        <h2 id="tagline">Enact change in your neighborhood</h2>
+        <p id="description">Work with your community to break language barriers while communicating with local legislators</p>
         <form action="#">
-          <input type="text" name="email" placeholder="Enter your email address">
-          <input type="submit"value="Submit">
+          <input id="email" type="text" name="email" placeholder="Enter your email address">
+          <input id="submit" type="submit" value="Submit">
           </address>
         </form>
       </div>
       <span class="footer">
         <div class="dropdown">
-          <button onclick="myFunction()" class="dropbtn">Language</button>
+          <button id="lang-button-0" onclick="myFunction()" class="dropbtn">English</button>
           <div id="myDropdown" class="dropdown-content">
-            <a href="index.html">English</a>
-            <a href="#">François</a>
-            <a href="#">Español</a>
-            <a href="#">简体中文</a>
-            <a href="#">繁體中文</a>
+            <button id="lang-button-1" onclick="changeLanguage(1)">Español</button>
+            <button id="lang-button-2" onclick="changeLanguage(2)">Français</button>
+            <button id="lang-button-3" onclick="changeLanguage(3)">简体中文</button>
+            <button id="lang-button-4" onclick="changeLanguage(4)">繁體中文</button>
           </div>
         </div>
-        <a class="footer-link" href="https://github.com/getcityhub" target="_blank">Open Source</a>
+        <a id="openSource" class="footer-link" href="https://github.com/getcityhub" target="_blank">Open Source</a>
         <!-- <a href="#">Press</a> -->
-        <a class="footer-link" href="mailto:support@cityhub.org">Support</a>
+        <a id="support" class="footer-link" href="mailto:support@cityhub.org">Support</a>
       </span>
     </div>
     <div id="right">
