@@ -27,7 +27,6 @@
     <link href="favicon.ico" rel="shortcut icon" />
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet" type="text/css" />
-
   </head>
   <body>
     <div id="left">
@@ -38,17 +37,16 @@
         <form action="#">
           <input id="email" type="text" name="email" placeholder="Enter your email address">
           <input id="submit" type="submit" value="Submit">
-          </address>
         </form>
       </div>
       <span class="footer">
-        <div class="dropdown">
-          <button id="lang-button-0" onclick="myFunction()" class="dropbtn">English</button>
-          <div id="myDropdown" class="dropdown-content">
-            <button id="lang-button-1" onclick="changeLanguage(1)">Español</button>
-            <button id="lang-button-2" onclick="changeLanguage(2)">Français</button>
-            <button id="lang-button-3" onclick="changeLanguage(3)">简体中文</button>
-            <button id="lang-button-4" onclick="changeLanguage(4)">繁體中文</button>
+        <div id="dropdown">
+          <button id="dropdown-button" onclick="toggleDropdown()">English</button>
+          <div id="dropdown-content" class="dropdown-content">
+            <button id="dropdown-button-1" onclick="changeLanguage(1)">Español</button>
+            <button id="dropdown-button-2" onclick="changeLanguage(2)">Français</button>
+            <button id="dropdown-button-3" onclick="changeLanguage(3)">简体中文</button>
+            <button id="dropdown-button-4" onclick="changeLanguage(4)">繁體中文</button>
           </div>
         </div>
         <a id="openSource" class="footer-link" href="https://github.com/getcityhub" target="_blank">Open Source</a>

@@ -58,30 +58,33 @@ html, body {
   line-height: 28px;
 }
 
-.left img {
-  width: 196px;
-  margin-top: 24px;
-}
-
-.left form [type=text]{
-  padding: 12px 20px;
+.left form [type = text] {
+  padding: 12px;
   font-size: 14px;
-  margin: 18px 0;
-  display: inline-block;
+  margin: 16px 0;
+  width: 50%;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  font-family: inherit;
+  height: 44px;
 }
 
-.left form [type = submit]{
+.left form [type = submit] {
   background-color: rgb(233,66,51);
-  color:rgb(233,233,233);
+  color: rgb(233,233,233);
   font-size: 16px;
-  padding: 12px 20px;
-  margin: 18px 0 18px 8px;
+  padding: 0 20px;
+  margin: 16px 0 16px 8px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-family: inherit;
+  height: 44px;
+}
+
+.left form [type = text]:focus, .left form [type = submit]:focus {
+  outline: 0;
 }
 
 .right {
@@ -124,7 +127,7 @@ html, body {
   color: #888;
 }
 
-.dropbtn {
+#dropdown-button {
     background-color: rgb(233,233,233);
     color: #aaa;
     font-family: 'Roboto', sans-serif;
@@ -133,22 +136,29 @@ html, body {
     font-size: 16px;
     border: none;
     cursor: pointer;
+    width: 104px;
+    margin-right: -4px;
 }
 
-.dropbtn:hover, .dropbtn:focus {
+#dropdown-button:hover, #dropdown-button:focus {
     background-color: rgb(233, 66, 51);
 }
 
-.dropdown {
+#dropdown {
     position: relative;
     display: inline-block;
+}
+
+#dropdown button:hover {
+  background-color: rgb(233,66,51);
+  color: rgb(233,233,233);
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: rgb(233,233,233);
-    min-width: 140px;
+    width: 104px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -161,21 +171,16 @@ html, body {
     font-weight: 500;
     text-decoration: none;
     display: block;
-    min-width: 140px;
+    width: 100%;
     background-color: rgb(233,233,233);
     font-size: 16px;
     border: none;
     cursor: pointer;
 }
 
-.dropdown button:hover{
-  background-color: rgb(233,66,51);
-  color: rgb(233,233,233);
-}
-
 .show {
-  display:block;
-  top: -183.5px;
+  display: block;
+  top: -178px;
 }
 
 #right .footer a {

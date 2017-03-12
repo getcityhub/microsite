@@ -1,20 +1,13 @@
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
+function toggleDropdown() {
+    document.getElementById("dropdown-content").classList.toggle("show");
 }
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
+  if (!event.target.matches('#dropdown-button')) {
+    var dropdown = document.getElementById("dropdown-content");
+    if (dropdown.classList.contains("show")) {
+      dropdown.classList.remove("show");
     }
   }
 }
@@ -34,17 +27,17 @@ function changeLanguage(lang) {
   var submit = document.getElementById("submit");
   var openSource = document.getElementById("openSource");
   var support = document.getElementById("support");
-  var button0 = document.getElementById("lang-button-0");
-  var button1 = document.getElementById("lang-button-1");
-  var button2 = document.getElementById("lang-button-2");
-  var button3 = document.getElementById("lang-button-3");
-  var button4 = document.getElementById("lang-button-4");
+  var button0 = document.getElementById("dropdown-button");
+  var button1 = document.getElementById("dropdown-button-1");
+  var button2 = document.getElementById("dropdown-button-2");
+  var button3 = document.getElementById("dropdown-button-3");
+  var button4 = document.getElementById("dropdown-button-4");
 
   if (languagePositions[lang] == "en-US") {
     tagline.innerHTML = "Enact change in your neighborhood";
     description.innerHTML = "Work with your community to break language barriers while communicating with local legislators";
-    email.setAttribute("placeholder","Enter your email address");
-    submit.setAttribute("value","Submit");
+    email.setAttribute("placeholder", "Enter your email address");
+    submit.setAttribute("value", "Submit");
     openSource.innerHTML = "Open Source";
     support.innerHTML = "Support";
     button0.innerHTML = "English";
@@ -54,10 +47,10 @@ function changeLanguage(lang) {
     button4.innerHTML = "繁體中文";
     languagePositions = ["en-US", "es-ES", "fr-FR", "zh-Hans", "zh-Hant"];
   } else if (languagePositions[lang] == "es-ES") {
-    tagline.innerHTML = "Promulger le changement dans votre quartier";
+    tagline.innerHTML = "Promulgar el cambio en su barrio";
     description.innerHTML = "Trabajar con su comunidad para rompar la barrera del idioma mientras comunicado con legislaturas locales";
-    email.setAttribute("placeholder","Anotar su correo electronico");
-    submit.setAttribute("value","Enviar");
+    email.setAttribute("placeholder", "Anotar su correo electronico");
+    submit.setAttribute("value", "Enviar");
     openSource.innerHTML = "Código Abierto";
     support.innerHTML = "Apoyo";
     button0.innerHTML = "Español";
@@ -67,10 +60,10 @@ function changeLanguage(lang) {
     button4.innerHTML = "繁體中文";
     languagePositions = ["es-ES", "en-US", "fr-FR", "zh-Hans", "zh-Hant"];
   } else if (languagePositions[lang] == "fr-FR") {
-    tagline.innerHTML = "Promulgar el cambio en su barrio";
+    tagline.innerHTML = "Promulger le changement dans votre quartier";
     description.innerHTML = "Travaillez avec votre communauté pour rompre des barrières linguistiques en commiquant avec des législateurs locaux";
-    email.setAttribute("placeholder","Entrer votre adresse email");
-    submit.setAttribute("value","Soumettre");
+    email.setAttribute("placeholder", "Entrer votre adresse email");
+    submit.setAttribute("value", "Soumettre");
     openSource.innerHTML = "Open Source";
     support.innerHTML = "Soutien";
     button0.innerHTML = "Français";
@@ -82,8 +75,8 @@ function changeLanguage(lang) {
   } else if (languagePositions[lang] == "zh-Hans") {
     tagline.innerHTML = "使你的小区变得更好";
     description.innerHTML = "与你的社区一起打破语言障碍并与立法者合作";
-    email.setAttribute("placeholder","输入您的Email");
-    submit.setAttribute("value","提交");
+    email.setAttribute("placeholder", "输入您的Email");
+    submit.setAttribute("value", "提交");
     openSource.innerHTML = "开源";
     support.innerHTML = "帮助";
     button0.innerHTML = "简体中文";
