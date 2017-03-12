@@ -112,16 +112,65 @@ html, body {
   font-family: 'Roboto', sans-serif;
 }
 
-.footer a {
+.footer a.footer-link {
   color: #aaa;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.5s ease;
-  margin: 0 16px;
+  margin: 16px;
 }
 
-.footer a:hover {
+.footer a.footer-link:hover {
   color: #888;
+}
+
+.dropbtn {
+    background-color: rgb(233,233,233);
+    color: #aaa;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: rgb(233, 66, 51);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(233,233,233);
+    min-width: 140px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #aaa;
+    padding: 12px 0 12px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover{
+  background-color: rgb(233,66,51);
+  color: rgb(233,233,233);
+}
+
+.show {
+  display:block;
+  top: -226px;
 }
 
 #right .footer a {
