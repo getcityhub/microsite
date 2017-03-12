@@ -43,13 +43,13 @@
         <div id="dropdown">
           <button id="dropdown-button" onclick="toggleDropdown()">English</button>
           <div id="dropdown-content" class="dropdown-content">
-            <button id="dropdown-button-1" onclick="changeLanguage(1)">Español</button>
-            <button id="dropdown-button-2" onclick="changeLanguage(2)">Français</button>
-            <button id="dropdown-button-3" onclick="changeLanguage(3)">简体中文</button>
-            <button id="dropdown-button-4" onclick="changeLanguage(4)">繁體中文</button>
+            <button id="dropdown-button-1" class="dropdown-button" onclick="changeLanguage(1)">Español</button>
+            <button id="dropdown-button-2" class="dropdown-button" onclick="changeLanguage(2)">Français</button>
+            <button id="dropdown-button-3" class="dropdown-button" onclick="changeLanguage(3)">简体中文</button>
+            <button id="dropdown-button-4" class="dropdown-button" onclick="changeLanguage(4)">繁體中文</button>
           </div>
         </div>
-        <a id="openSource" class="footer-link" href="https://github.com/getcityhub" target="_blank">Open Source</a>
+        <a id="open-source" class="footer-link" href="https://github.com/getcityhub" target="_blank">Open Source</a>
         <!-- <a href="#">Press</a> -->
         <a id="support" class="footer-link" href="mailto:support@cityhub.org">Support</a>
       </span>
@@ -59,14 +59,23 @@
         <img src="iphone-silver.png" id="device" />
         <img src="screenshot.jpg" id="screenshot" />
       </div>
-      <span class="footer">&copy; 2017 <a href="http://jackcook.nyc" target="_blank">Jack Cook</a>, <a href="https://github.com/carolshao" target="_blank"> Carol Shao</a>, <a href="https://github.com/stephaniechow" target="_blank">Stephanie Chow</a></span>
+      <span class="footer">&copy; 2017 <a href="http://jackcook.nyc" target="_blank">Jack Cook</a>, <a href="https://github.com/carolshao" target="_blank">Carol Shao</a>, <a href="https://github.com/stephaniechow" target="_blank">Stephanie Chow</a></span>
     </div>
     <span class="mobilefooter">
-      <a href="https://github.com/getcityhub" target="_blank">Open Source</a>
+      <div id="mobile-dropdown">
+        <button id="mobile-dropdown-button" onclick="toggleMobileDropdown()">English</button>
+        <div id="mobile-dropdown-content" class="dropdown-content">
+          <button id="mobile-dropdown-button-1" class="dropdown-button" onclick="changeLanguage(1)">Español</button>
+          <button id="mobile-dropdown-button-2" class="dropdown-button" onclick="changeLanguage(2)">Français</button>
+          <button id="mobile-dropdown-button-3" class="dropdown-button" onclick="changeLanguage(3)">简体中文</button>
+          <button id="mobile-dropdown-button-4" class="dropdown-button" onclick="changeLanguage(4)">繁體中文</button>
+        </div>
+      </div>
+      <a id="mobile-open-source" href="https://github.com/getcityhub" target="_blank">Open Source</a>
       <!-- <a href="#">Press</a> -->
-      <a href="mailto:support@cityhub.org">Support</a>
+      <a id="mobile-support" href="mailto:support@cityhub.org">Support</a>
     </span>
-    <span class="mobilefooter">&copy; 2017 <a href="http://jackcook.nyc" target="_blank" class="name">Jack Cook</a>,<a href="https://github.com/carolshao" target="_blank">Carol Shao</a>, <a href="https://github.com/stephaniechow" target="_blank">Stephanie Chow</a></span>
+    <span class="mobilefooter">&copy; 2017 <a href="http://jackcook.nyc" target="_blank" class="name">Jack Cook</a>, <a href="https://github.com/carolshao" target="_blank" class="name">Carol Shao</a>, <a href="https://github.com/stephaniechow" target="_blank" class="name">Stephanie Chow</a></span>
   </body>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
