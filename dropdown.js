@@ -73,7 +73,7 @@ function changeLanguage(lang) {
     languagePositions = ["en-US", "es-ES", "fr-FR", "zh-Hans", "zh-Hant"];
   } else if (languagePositions[lang] == "es-ES") {
     tagline.innerHTML = "Promulgar el cambio en su barrio";
-    description.innerHTML = "Trabajar con su comunidad para rompar la barrera del idioma mientras comunicado con legislaturas locales";
+    description.innerHTML = "Trabajar con su comunidad para romper la barrera del idioma mientras se comunica con legislaturas locales";
     email.setAttribute("placeholder", "Anotar su correo electronico");
     submit.setAttribute("value", "Enviar");
     openSource.innerHTML = "Código Abierto";
@@ -83,7 +83,7 @@ function changeLanguage(lang) {
     button2.innerHTML = "Français";
     button3.innerHTML = "简体中文";
     button4.innerHTML = "繁體中文";
-    mobileOpenSource.innerHTML = "Código Abierto";
+    mobileOpenSource.innerHTML = "Código abierto";
     mobileSupport.innerHTML = "Apoyo";
     mobileButton0.innerHTML = "Español";
     mobileButton1.innerHTML = "English";
@@ -93,7 +93,7 @@ function changeLanguage(lang) {
     languagePositions = ["es-ES", "en-US", "fr-FR", "zh-Hans", "zh-Hant"];
   } else if (languagePositions[lang] == "fr-FR") {
     tagline.innerHTML = "Promulger le changement dans votre quartier";
-    description.innerHTML = "Travaillez avec votre communauté pour rompre des barrières linguistiques en commiquant avec des législateurs locaux";
+    description.innerHTML = "Travailler avec votre communauté pour rompre des barrières linguistiques en communiquant avec des législateurs locaux";
     email.setAttribute("placeholder", "Entrer votre adresse email");
     submit.setAttribute("value", "Soumettre");
     openSource.innerHTML = "Open Source";
