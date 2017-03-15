@@ -76,7 +76,7 @@ function changeLanguage(lang) {
     description.innerHTML = "Trabajar con su comunidad para romper la barrera del idioma mientras se comunica con legislaturas locales";
     email.setAttribute("placeholder", "Anotar su correo electronico");
     submit.setAttribute("value", "Enviar");
-    openSource.innerHTML = "Código Abierto";
+    openSource.innerHTML = "Código abierto";
     support.innerHTML = "Apoyo";
     button0.innerHTML = "Español";
     button1.innerHTML = "English";
