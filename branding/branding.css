@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+  padding: 32px;
+
+  font-family: 'Roboto', sans-serif;
+  color: rgb(40, 40, 40);
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 36px;
+}
+
+h2 {
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.red {
+  background: rgb(233, 66, 51);
+}
+
+.white {
+  background: rgb(255, 255, 255);
+}
+
+.dark-blue {
+  background: rgb(3, 39, 57);
+}
+
+.dark-gray {
+  background: rgb(40, 40, 40);
+}
+
+.right {
+  float: right;
+}
+
+.container {
+  margin: 0 auto 40px;
+  max-width: 760px;
+}
+
+.container:last-child {
+  margin: 0 auto;
+}
+
+.logo-container {
+  display: inline-block;
+}
+
+.logo {
+  height: 120px;
+  width: 360px;
+  border: 1px #ddd solid;
+  border-radius: 4px;
+}
+
+.logo img {
+  height: 50%;
+  width: 50%;
+  margin: 30px auto;
+  display: block;
+}
+
+.caption {
+  display: block;
+  font-size: 15px;
+  margin-top: 8px;
+}
+
+.subcaption {
+  display: block;
+  font-size: 13px;
+  color: #999;
+}
+
+.color {
+  width: 180px;
+  display: inline-block;
+  margin-left: 5px;
+  border: 1px #ddd solid;
+  border-radius: 4px;
+  vertical-align: top;
+}
+
+.color:first-child {
+  margin-left: 0;
+}
+
+.color .name {
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+  margin: 14px 0 0 14px;
+  color: #fff;
+}
+
+.color.white .name {
+  color: rgb(40, 40, 40);
+}
+
+.color .hex {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  display: block;
+  margin: 172px 0 14px 14px;
+}
+
+.color.white .hex {
+  color: rgba(40, 40, 40, 0.3);
+}
