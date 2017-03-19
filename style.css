@@ -68,6 +68,7 @@ html, body {
   box-sizing: border-box;
   font-family: inherit;
   height: 44px;
+  -webkit-appearance: none;
 }
 
 .left form [type = submit] {
@@ -81,6 +82,7 @@ html, body {
   cursor: pointer;
   font-family: inherit;
   height: 44px;
+  -webkit-appearance: none;
 }
 
 .left form [type = text]:focus, .left form [type = submit]:focus {
